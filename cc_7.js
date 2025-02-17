@@ -7,3 +7,13 @@ function calculateSalary(baseSalary, bonus, taxRate) {
 
 calculateSalary(5000, 500, 0.1); // Expected output: "Net Salary: $5000.00"
 calculateSalary(7000, 1000, 0.15); // Expected output: "Net Salary: $6950.00"
+
+
+// task 2
+
+const calculateDiscount = function (price, discountRate) {
+    let finalPrice = price - (price * discountRate);
+    console.log(`Final Price: $${finalPrice.toFixed(2)}`);
+  };
+  calculateDiscount(100, 0.2); // Expected output: "Final Price: $80.00"
+  calculateDiscount(250, 0.15); // Expected output: "Final Price: $212.50"
