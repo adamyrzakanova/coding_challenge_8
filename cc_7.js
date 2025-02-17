@@ -72,3 +72,17 @@ function createCartTracker() {
   cart(20); // Expected output: "Total Cart Value: $20"
   cart(35); // Expected output: "Total Cart Value: $55"
   cart(35); // Expected output: "Total Cart Value: $55"
+
+
+  // task 8
+function calculateSavings(years, amount) {
+    if (years === 0 || years > 10) return amount;
+    let newAmount = amount * 1.05;
+    if (years === 1) {
+      console.log(`Projected Savings: $${newAmount.toFixed(2)}`);
+      return;
+}
+return calculateSavings(years - 1, newAmount);
+}
+calculateSavings(8, 1000); // Expected output: "Projected Savings: $1102.50"
+calculateSavings(5, 5000); // Expected output: "Projected Savings: $6381.41"
